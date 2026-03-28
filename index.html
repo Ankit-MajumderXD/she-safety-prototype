@@ -325,10 +325,9 @@
             submitBtn.disabled = true;
 
             const formData = {
+                description: form.incident.value,
                 location: form.location.value,
-                incident: form.incident.value,
-                timestamp: new Date().toISOString(),
-                protocol: "GPGI-256-GCM"
+                time: new Date().toISOString()
             };
 
             try {
